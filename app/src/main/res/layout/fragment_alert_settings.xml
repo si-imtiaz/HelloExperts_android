@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.HelloExperts.HelloExpert.Complains"
+
+
+    >
+<customfonts.MyRegulerText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Hello"/>
+
+
+    <RelativeLayout
+        android:id="@+id/Top_fixed_notification_section"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:visibility="visible"
+        android:background="@color/header_color">
+
+        <customfonts.MyRegulerText
+            android:layout_centerInParent="true"
+            android:id="@+id/bottom_fixed_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="You can update status for notification alerts"
+            />
+
+
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_below="@+id/Top_fixed_notification_section"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+
+            android:padding="10dp">
+
+            <customfonts.MyTextView
+                android:layout_alignParentLeft="true"
+                android:id="@+id/switch_heading"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Receive notification for newly posted question"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <Switch
+                android:layout_alignParentRight="true"
+                android:id="@+id/alert_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/SwitchTheme"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/main_loader_alert_notification_activity_bg"
+        android:background="#A1000000"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/recent_loader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AVLoadingIndicatorView"
+            android:visibility="visible"
+            app:indicatorName="SquareSpinIndicator"
+            app:indicatorColor="@color/white"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

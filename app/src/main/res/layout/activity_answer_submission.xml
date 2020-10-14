@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/rootView"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.HelloExperts.HelloExpert.Answer_submission">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+
+                android:visibility="gone"
+                android:id="@+id/question_close_btn"
+                android:layout_width="30dp"
+                android:onClick="hideQuestionView"
+                android:layout_alignParentRight="true"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/cross_icon_black"
+                android:layout_marginRight="10dp"
+                />
+
+            <customfonts.MyRegulerText
+
+                android:visibility="gone"
+                android:id="@+id/hiddenQuestion_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_alignParentLeft="true"
+                android:padding="10dp"
+                android:paddingLeft="20dp"
+                android:text="Question Description"
+                android:textColor="#99cc33"
+                android:textSize="18dp"
+
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/question_section"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:background="@color/white"
+                android:layout_below="@+id/question_close_btn"
+                >
+
+
+
+                <View
+
+                    android:layout_width="match_parent"
+                    android:id="@+id/question_heading_divider"
+                    android:layout_margin="10dp"
+                    android:layout_height="1dp"
+                    android:background="#E99E9898"/>
+
+
+                <WebView
+
+                    android:layout_below="@+id/question_heading_divider"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/hiddenQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="4dp"
+                    android:scrollbars="vertical"
+                    android:padding="10dp"
+                    android:paddingLeft="20dp"
+                    android:text="Show Question here from backend"
+                    android:textColor="#414042"
+                    android:textSize="16dp"
+
+                    />
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/skip_question_section"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:background="@color/white">
+                <RelativeLayout
+                    android:id="@+id/skip_header_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp">
+
+                    <customfonts.MyRegulerText
+                        android:layout_marginTop="5dp"
+                        android:layout_alignParentLeft="true"
+
+                        android:layout_width="325dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/skip_question_header"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical"
+                        android:textColor="#1269Ba"
+
+                        />
+
+                    <ImageView
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/skip_question_close_btn"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/cross_icon_black"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        />
+                </RelativeLayout>
+                <View
+                    android:layout_below="@+id/skip_header_section"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="3dp"
+                    android:background="@color/btn_color"/>
+
+                <ScrollView
+                    android:layout_below="@+id/skip_header_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+
+                        android:orientation="vertical"
+                        android:id="@+id/skip_question_options"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="30dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp">
+                            <customfonts.MyRegulerText
+                                android:id="@+id/note_bold_select"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Note:"
+                                android:textSize="16sp"
+                                android:textColor="#414042"
+                                android:layout_weight="8"/>
+                            <customfonts.MyRegulerText
+                                android:layout_weight="1"
+                                android:textColor="#414042"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:text="@string/skip_question_note"/>
+                        </LinearLayout>
+
+                        <customfonts.MyRegulerText
+                            android:id="@+id/bold_select"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="#414042"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:text="@string/skip_question_select_text"/>
+                        <RadioGroup
+                            android:layout_marginTop="20dp"
+                            android:id="@+id/all_radio_buttons"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+
+                        </RadioGroup>
+                        <customfonts.MyEditText
+                            android:visibility="gone"
+                            android:id="@+id/other_reason"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Other"
+                            android:inputType="text"
+                            android:textColor="#000"
+                            android:background="#f0f0f4"
+                            android:padding="10dp"
+                            android:textSize="15sp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
+                            />
+                        <customfonts.MyRegulerText
+                            android:id="@+id/error_select_option_skip"
+                            android:visibility="gone"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/red"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:text="@string/error_select_option_skip"/>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <Button
+
+                                android:id="@+id/skip_confirm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Confirm"
+                                android:textColor="@color/white"
+                                android:textAllCaps="false"
+                                android:background="@drawable/answer_submit_btn"
+                                android:padding="10dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_margin="10dp"
+                                />
+                            <Button
+
+                                android:id="@+id/skip_cancel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Cancel"
+                                android:textColor="@color/white"
+                                android:textAllCaps="false"
+                                android:background="@drawable/see_question_answer_submission_button"
+                                android:padding="10dp"
+                                android:layout_toLeftOf="@+id/skip_confirm"
+                                android:layout_alignBottom="@+id/skip_confirm"
+
+                                />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </ScrollView>
+
+
+            </RelativeLayout>
+
+            <!--    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout-->
+
+            <!--        android:id="@+id/refresh_answer_submission"-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="match_parent"-->
+            <!--        >-->
+            <!--        -->
+            <!--    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+
+            <RelativeLayout
+                android:visibility="visible"
+                android:id="@+id/answer_section"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:visibility="visible"
+                    android:background="@color/white"
+                    android:id="@+id/see_question_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+
+                    <cn.iwgang.countdownview.CountdownView
+                        android:id="@+id/answer_submission_time"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        app:isHideTimeBackground="false"
+                        app:isShowDay="false"
+                        app:isShowMillisecond="false"
+                        app:isShowHour="true"
+                        app:isShowMinute="true"
+                        app:isShowSecond="true"
+                        app:suffixGravity="center"
+                        app:suffixTextColor="#000000"
+                        app:suffixTextSize="25sp"
+                        app:timeBgDivisionLineSize="1dp"
+                        app:timeBgRadius="5dp"
+                        app:timeBgSize="40dp"
+                        app:timeTextColor="#FFFFFF"
+                        app:timeTextSize="25sp"/>
+                    <customfonts.MyRegulerText
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_alignParentLeft="true"
+
+                        android:layout_centerVertical="true"
+                        android:text="Give your answer within:"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+
+                    android:visibility="visible"
+                    android:id="@+id/skip_timer_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/see_question_section"
+                    >
+                    <cn.iwgang.countdownview.CountdownView
+                        android:id="@+id/skip_question_timer"
+                        android:layout_width="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:visibility="gone"
+                        android:layout_marginTop="20dp"
+                        app:isHideTimeBackground="false"
+                        app:isShowDay="false"
+                        app:isShowHour="false"
+                        app:isShowMillisecond="false"
+                        app:isShowMinute="true"
+                        app:isShowSecond="true"
+                        app:isShowTimeBgBorder="true"
+                        app:suffixGravity="center"
+                        app:suffixLRMargin="5dp"
+                        app:suffixTextColor="#414042"
+                        app:suffixTextSize="17sp"
+                        app:timeBgBorderColor="#E8E8E8"
+                        app:timeBgBorderRadius="3dp"
+                        app:timeBgBorderSize="2dp"
+                        app:timeBgColor="#FFFFFF"
+                        app:timeBgDivisionLineSize="1dp"
+                        app:timeBgRadius="3dp"
+                        app:timeBgSize="30dp"
+                        app:timeTextColor="#414042"
+                        app:timeTextSize="17sp"/>
+                    <customfonts.MyRegulerText
+                        android:id="@+id/skip_question_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="No suspension if skipped within 30 min"/>
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="550dp"
+                    android:id="@+id/answer_panel"
+                    android:layout_below="@+id/skip_timer_section"
+                    android:orientation="vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    >
+                    <in.nashapp.androidsummernote.Summernote
+
+                        android:id="@+id/answer_submission_editor"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_marginTop="10dp"
+
+
+                        android:visibility="visible" />
+
+
+
+                </LinearLayout>
+                <View
+                    android:layout_below="@+id/answer_panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/editor_divider123"
+                    android:background="@android:color/darker_gray"/>
+
+
+
+
+                <LinearLayout
+                    android:visibility="visible"
+                    android:id="@+id/last_section"
+                    android:background="@color/white"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+
+                        android:id="@+id/review_and_skip_section"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/review_and_submit_answer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/answer_submit_btn"
+                            android:text="Review and Submit Answer"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white" />
+
+                        <Button
+                            android:id="@+id/skip_question"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/skip_question_btn"
+                            android:text="Skip Question"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/question_no_available_section"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:background="@color/white">
+                <LinearLayout
+                    android:id="@+id/question_no_available"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp">
+
+
+                    <customfonts.MyRegulerText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/question_no_available_header"
+                        android:layout_weight="5"
+                        android:textSize="20sp"
+                        android:gravity="center_vertical"
+                        android:textColor="#1269Ba"
+
+                        />
+
+
+                </LinearLayout>
+                <View
+                    android:layout_below="@+id/question_no_available"
+                    android:id="@+id/question_no_available_line"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="3dp"
+                    android:background="@color/btn_color"/>
+
+                <LinearLayout
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:layout_below="@+id/question_no_available_line"
+                    android:orientation="vertical"
+                    android:layout_centerInParent="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/question_time_out"
+                        android:layout_marginBottom="10dp"/>
+                    <customfonts.MyRegulerText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/question_no_available_text_line_one"
+                        android:layout_weight="5"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:textColor="@color/red"
+
+                        />
+                    <customfonts.MyRegulerText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/question_no_available_text_line_two"
+                        android:layout_weight="5"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:textColor="@color/red"
+
+                        />
+                    <customfonts.MyRegulerText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/try_another_question"
+                        android:text="Try another question"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="5"
+                        android:textSize="18sp"
+                        android:textStyle=""
+                        android:gravity="center"
+                        android:textColor="#337ab7"
+
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/skip_question_timeout_section"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:background="@color/white">
+                <RelativeLayout
+                    android:id="@+id/skip_question_timeout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp">
+
+
+
+                    <ImageView
+                        android:id="@+id/skip_question_timeout_close_btn"
+                        android:layout_alignParentRight="true"
+                        app:srcCompat="@drawable/cross_icon_black"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:layout_below="@+id/skip_question_timeout"
+                    android:orientation="vertical"
+                    android:layout_centerInParent="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/question_time_out"
+                        android:layout_marginBottom="10dp"/>
+                    <customfonts.MyRegulerText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/skip_question_timeout_text_line_one"
+                        android:layout_weight="5"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:textColor="@color/red"
+
+                        />
+                    <customfonts.MyRegulerText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/skip_question_timeout_text_line_two"
+                        android:layout_weight="5"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:textColor="@color/red"
+
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/main_loader_answer_submission_bg"
+                android:background="#A1000000"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/recent_loader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/AVLoadingIndicatorView"
+                    android:visibility="visible"
+                    app:indicatorName="SquareSpinIndicator"
+                    app:indicatorColor="@color/white"
+                    />
+                <customfonts.MyRegulerText
+                    android:id="@+id/image_loading"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Loading..."
+                    android:textColor="#FFFFFF"
+                    />
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+<RelativeLayout
+    android:visibility="gone"
+    android:id="@+id/image_uploading"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000">
+    <ProgressBar
+        android:id= "@+id/progressBar"
+        style= "?android:attr/progressBarStyleHorizontal"
+        android:layout_width= "150dp"
+        android:layout_height= "150dp"
+        android:layout_centerInParent="true"
+        android:background= "@drawable/circular_shape"
+        android:indeterminate= "false"
+        android:max= "100"
+        android:visibility="gone"
+        android:progress= "0"
+        android:progressDrawable= "@drawable/circular_progressbar" />
+    <customfonts.MyRegulerText
+        android:id="@+id/text_percentage"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        android:visibility="gone"
+        android:textSize="20sp"
+        android:textColor="#ffffff" />
+</RelativeLayout>
+
+</RelativeLayout>

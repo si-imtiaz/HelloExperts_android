@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.HelloExperts.HelloExpert.About_yourself">
+    <ScrollView
+        android:layout_above="@+id/save_and_continue_to_vi"
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/sign_out_from_page_v"
+            android:layout_height="30dp"
+           android:layout_gravity="right"
+            android:src="@drawable/logout"/>
+        <customfonts.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:gravity="left"
+            android:background="#eeeeee"
+            android:text="Tell your students what you like to do besides just expert. Share your interests and hobbies because students want to know about how versatile their experts are and it might also inspire them for better learning."
+            android:textSize="15dp"
+            android:textColor="#414042"
+            android:layout_marginBottom="10dp"
+            />
+        <customfonts.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="14dp"
+            android:gravity="left"
+            android:text="Interest &amp; Hobbies"
+            android:textSize="20dp"
+            android:textColor="#1268B9"
+            android:layout_marginBottom="10dp"
+            />
+        <customfonts.MyEditText
+            android:id="@+id/user_interest_hobbies"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:gravity="top"
+            android:hint="Tell us about your self, your interest, your qualities"
+            android:textColor="#000"
+            android:background="#f0f0f4"
+            android:layout_weight="1"
+            android:textSize="14dp"
+            android:padding="12dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#BDB8B8"
+            android:layout_marginTop="20dp"/>
+        <customfonts.MyTextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:gravity="left"
+            android:background="#eeeeee"
+            android:text="Describe your 'hands-on experience / proficiency' as an expert."
+            android:textSize="15dp"
+            android:textColor="#414042"
+            android:layout_marginBottom="10dp"
+            />
+        <customfonts.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="14dp"
+            android:gravity="left"
+            android:text="Education Experience"
+            android:textSize="20dp"
+            android:textColor="#1268B9"
+            android:layout_marginBottom="10dp"
+            />
+        <customfonts.MyEditText
+            android:id="@+id/user_education_experience_description"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:gravity="top"
+            android:textSize="14dp"
+            android:hint="Lets explore the professional aspect of your profile, Share your professional qualities so that our students can be attaracted more towards you, Remember, more porfessionally you reperesent yourself; higher is the rate of your hiring. Lets explore the professional aspect of your profile, Share your professional qualities so that our students can be attaracted more towards you, Remember, more porfessionally you reperesent yourself; higher is the rate of your hiring."
+            android:textColor="#000"
+            android:background="#f0f0f4"
+            android:layout_weight="1"
+            android:padding="12dp"
+            />
+
+    </LinearLayout>
+
+</ScrollView>
+    <customfonts.MyRegulerText
+        android:id="@+id/save_and_continue_to_vi"
+        android:layout_width="match_parent"
+        android:layout_weight="0"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+
+        android:layout_height="wrap_content"
+        android:background="@drawable/btnformate"
+        android:textAlignment="center"
+        android:padding="8dp"
+        android:text="Save &amp; Continue"
+        android:textSize="21dp"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        />
+    <LinearLayout
+        android:id="@+id/main_loader_about_yourself_bg"
+        android:background="#A1000000"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/recent_loader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AVLoadingIndicatorView"
+            android:visibility="visible"
+            app:indicatorName="SquareSpinIndicator"
+            app:indicatorColor="@color/white"
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>

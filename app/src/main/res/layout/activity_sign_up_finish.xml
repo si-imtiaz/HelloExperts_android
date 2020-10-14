@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:scrollbars="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.HelloExperts.HelloExpert.Sign_up_finish">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/sign_out_from_page_vi"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:src="@drawable/logout"/>
+        <customfonts.MyRegulerText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:padding="14dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Thank you for your submission."
+            android:textSize="20dp"
+            android:textColor="#414042"
+            />
+        <customfonts.MyRegulerText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:padding="14dp"
+            android:gravity="center"
+            android:text="Your application as an Expert is under review. When successfully reviewed your probation will start and you will have to answer 5 questions to become an approved expert."
+            android:textSize="14dp"
+            android:textColor="#414042"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <customfonts.MyRegulerText
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+               android:paddingLeft="18dp"
+                android:paddingRight="5dp"
+                android:gravity="right"
+                android:text="If you do not hear from us till"
+                android:textSize="14dp"
+                android:textColor="#414042"
+                />
+            <TextView
+                android:id="@+id/expected_date"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:text="Oct 06, 2019"
+                android:textSize="14dp"
+                android:textColor="#414042"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <customfonts.MyRegulerText
+                android:id="@+id/to_feel_free"
+                android:layout_weight="1"
+              android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="feel free to"
+                android:gravity="right"
+                android:textSize="14dp"
+                android:textColor="#414042"
+                />
+
+            <customfonts.MyRegulerText
+                android:layout_weight="1"
+                android:id="@+id/contact_us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Contact Us"
+                android:textSize="16dp"
+                android:textColor="#337ab7"
+                />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="#ffbc00"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

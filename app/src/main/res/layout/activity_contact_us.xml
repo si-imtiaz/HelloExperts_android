@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.HelloExperts.HelloExpert.Complains"
+
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_margin="20dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+            <customfonts.MyRegulerText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FAQ's"
+                android:textColor="#1269Ba"
+                android:textSize="25dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+
+                android:background="@color/btn_color"/>
+
+
+            <ScrollView
+                android:id="@+id/faq_section"
+                android:layout_weight="30"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <customfonts.MyRegulerText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Earnings"
+                        android:textStyle="bold"
+                        android:textColor="#1269Ba"
+                        android:textSize="22dp"/>
+                    <LinearLayout
+
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <customfonts.MyRegulerText
+                            android:id="@+id/question_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_faq_1"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer_faq_1"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+
+                        <customfonts.MyRegulerText
+                            android:id="@+id/question_2"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_faq_2"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer_faq_2"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+
+                        <customfonts.MyRegulerText
+                            android:id="@+id/question_3"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_faq_3"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer_faq_3"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+
+                        <customfonts.MyRegulerText
+                            android:id="@+id/question_4"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_faq_4"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer_faq_4"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:id="@+id/question_ex_5"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_faq_5"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer_faq_5"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:id="@+id/question_ex_6"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_faq_6"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer_faq_6"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:id="@+id/question_ex_7"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_faq_7"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer_faq_7"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <customfonts.MyRegulerText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="please feel Free to "
+                                android:textColor="#000000"
+                                android:textSize="16dp"/>
+
+                            <customfonts.MyRegulerText
+                                android:id="@+id/earning_problem"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="contact us."
+                                android:textStyle=""
+                                android:textColor="#337ab7"
+                                android:textSize="16dp"/>
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <customfonts.MyRegulerText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Become an Expert"
+                        android:textStyle="bold"
+                        android:textColor="#1269Ba"
+                        android:textSize="22dp"/>
+                    <LinearLayout
+                        android:padding="10dp"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <customfonts.MyRegulerText
+                            android:id="@+id/question_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_faq_8"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer_faq_8"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+
+                        <customfonts.MyRegulerText
+                            android:id="@+id/question_6"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_faq_9"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer_faq_9"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+
+                        <customfonts.MyRegulerText
+                            android:id="@+id/question_7"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_faq_10"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer_faq_10"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:id="@+id/question_ex_8"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_faq_11"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer_faq_11"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:id="@+id/question_ex_9"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_faq_12"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer_faq_12"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:id="@+id/question_ex_10"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_faq_13"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer_faq_13"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:id="@+id/question_ex_11"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_faq_14"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer_faq_14"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:id="@+id/question_ex_12"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_faq_15"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer_faq_15"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:id="@+id/question_ex_13"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_faq_16"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer_faq_16"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+
+                    </LinearLayout>
+
+                    <customfonts.MyRegulerText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Working as Expert"
+                        android:textStyle="bold"
+                        android:textColor="#1269Ba"
+                        android:textSize="22dp"/>
+                    <LinearLayout
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <customfonts.MyRegulerText
+                            android:id="@+id/question_8"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_faq_17"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer_faq_17"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+
+                        <customfonts.MyRegulerText
+                            android:id="@+id/question_9"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_faq_18"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer_faq_18"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+
+                        <customfonts.MyRegulerText
+                            android:id="@+id/question_10"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_faq_19"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer_faq_19"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+
+                        <customfonts.MyRegulerText
+                            android:id="@+id/question_11"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_faq_20"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer_faq_20"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+
+                        <customfonts.MyRegulerText
+                            android:id="@+id/question_12"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_faq_21"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer_faq_21"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+
+                        <customfonts.MyRegulerText
+                            android:id="@+id/question_13"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_faq_22"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer_faq_22"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+
+
+                        <customfonts.MyRegulerText
+                            android:id="@+id/question_ex_14"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_faq_23"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer_faq_23"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+
+                        <customfonts.MyRegulerText
+                            android:id="@+id/question_ex_15"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_faq_24"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer_faq_24"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+
+                        <customfonts.MyRegulerText
+                            android:id="@+id/question_ex_16"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_faq_25"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer_faq_25"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+
+                        <customfonts.MyRegulerText
+                            android:id="@+id/question_ex_17"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_faq_26"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer_faq_26"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+
+                        <customfonts.MyRegulerText
+                            android:id="@+id/question_ex_18"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_faq_27"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer_faq_27"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+
+                        <customfonts.MyRegulerText
+                            android:id="@+id/question_ex_19"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_faq_28"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer_faq_28"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+
+                        <customfonts.MyRegulerText
+                            android:id="@+id/question_ex_20"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_faq_29"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer_faq_29"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+
+                        <customfonts.MyRegulerText
+                            android:id="@+id/question_ex_21"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_faq_30"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer_faq_30"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+
+                        <customfonts.MyRegulerText
+                            android:id="@+id/question_ex_22"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_faq_31"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer_faq_31"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+
+                        <customfonts.MyRegulerText
+                            android:id="@+id/question_ex_23"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_faq_32"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer_faq_32"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <customfonts.MyRegulerText
+                                android:id="@+id/deactivate_account"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="contact us."
+                                android:textStyle=""
+                                android:textColor="#337ab7"
+                                android:textSize="16dp"/>
+
+                        </LinearLayout>
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+                    <customfonts.MyRegulerText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Account Restriction"
+                        android:textStyle="bold"
+                        android:textColor="#1269Ba"
+                        android:textSize="22dp"/>
+                    <LinearLayout
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <customfonts.MyRegulerText
+                            android:id="@+id/question_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_faq_33"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer_faq_33"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+
+                        <customfonts.MyRegulerText
+                            android:id="@+id/question_15"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_faq_34"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="16dp"/>
+                        <customfonts.MyRegulerText
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer_faq_34"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/main_loader_contact_activity_bg"
+        android:background="#A1000000"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/recent_loader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AVLoadingIndicatorView"
+            android:visibility="visible"
+            app:indicatorName="SquareSpinIndicator"
+            app:indicatorColor="@color/white"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

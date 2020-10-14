@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.HelloExperts.HelloExpert.Complains"
+    android:layout_margin="20dp"
+
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+            <customfonts.MyRegulerText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Expert Suspension Policies"
+                android:textColor="#1269Ba"
+                android:textSize="25dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+
+                android:background="@color/btn_color"/>
+
+
+            <ScrollView
+                android:id="@+id/faq_section"
+                android:layout_weight="30"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <customfonts.MyRegulerText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/expert_suspension_policy_first_paragraph"
+                            android:textColor="#000000"
+                            android:textSize="16dp"/>
+
+                    </LinearLayout>
+
+
+
+
+                    <customfonts.MyRegulerText
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="How suspension is applied"
+                        android:textStyle="bold"
+                        android:textColor="#1269Ba"
+                        android:textSize="22dp"/>
+                    <LinearLayout
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <customfonts.MyRegulerText
+
+                                android:id="@+id/answer_writing_heading_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/expert_suspension_policy_first_heading"
+                                android:textColor="#1269Ba"
+                                android:textStyle="bold"
+                                android:textSize="16dp"/>
+                            <customfonts.MyRegulerText
+
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/expert_suspension_policy_first_heading_detail"
+                                android:textColor="#000000"
+                                android:textSize="16dp"/>
+                            <customfonts.MyRegulerText
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/answer_writing_heading_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/expert_suspension_policy_second_heading"
+                                android:textColor="#1269Ba"
+                                android:textStyle="bold"
+                                android:textSize="16dp"/>
+                            <customfonts.MyRegulerText
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/expert_suspension_policy_second_heading_detail"
+                                android:textColor="#000000"
+                                android:textSize="16dp"/>
+
+                            <LinearLayout
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/table_background_border"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:background="@drawable/table_background_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <customfonts.MyRegulerText
+                                        android:background="@drawable/table_background_border"
+                                        android:gravity="center"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="Level of Suspension"
+                                        android:textColor="#1269Ba"
+                                        android:textStyle="bold"
+                                        android:textSize="16dp"/>
+
+                                    <customfonts.MyRegulerText
+                                        android:background="@drawable/table_background_border"
+                                        android:gravity="center"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Conditions for Suspension
+                                    (Whichever is earlier)"
+                                        android:textColor="#1269ba"
+                                        android:textStyle="bold"
+                                        android:textSize="16dp"/>
+
+                                    <customfonts.MyRegulerText
+                                        android:background="@drawable/table_background_border"
+                                        android:gravity="center"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="Period of Suspension"
+                                        android:textColor="#1269ba"
+                                        android:textStyle="bold"
+                                        android:textSize="16dp"/>
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:background="@drawable/table_background_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <customfonts.MyRegulerText
+                                        android:background="@drawable/table_background_border"
+                                        android:id="@+id/level_1"
+                                        android:gravity="center"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="1st"
+                                        android:textColor="#333333"
+                                        android:textStyle="bold"
+                                        android:textSize="16dp"/>
+
+                                    <customfonts.MyRegulerText
+                                        android:background="@drawable/table_background_border"
+
+                                        android:paddingLeft="5dp"
+                                        android:gravity="left"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/expert_first_suspension_condition"
+                                        android:textColor="#333333"
+                                        android:textSize="16dp"/>
+
+                                    <customfonts.MyRegulerText
+                                        android:background="@drawable/table_background_border"
+                                        android:id="@+id/duration_1"
+                                        android:gravity="center"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="1 Day"
+                                        android:textColor="#333333"
+                                        android:textStyle="bold"
+                                        android:textSize="16dp"/>
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:background="@drawable/table_background_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <customfonts.MyRegulerText
+                                        android:background="@drawable/table_background_border"
+                                        android:id="@+id/level_2"
+                                        android:gravity="center"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="2nd"
+                                        android:textColor="#333333"
+                                        android:textStyle="bold"
+                                        android:textSize="16dp"/>
+
+                                    <customfonts.MyRegulerText
+                                        android:background="@drawable/table_background_border"
+
+                                        android:paddingLeft="5dp"
+                                        android:gravity="left"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/expert_second_suspension_condition"
+                                        android:textColor="#333333"
+                                        android:textSize="16dp"/>
+
+                                    <customfonts.MyRegulerText
+                                        android:background="@drawable/table_background_border"
+                                        android:id="@+id/duration_2"
+                                        android:gravity="center"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="2 Days"
+                                        android:textColor="#333333"
+                                        android:textStyle="bold"
+                                        android:textSize="16dp"/>
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:background="@drawable/table_background_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <customfonts.MyRegulerText
+                                        android:background="@drawable/table_background_border"
+                                        android:id="@+id/level_3"
+                                        android:gravity="center"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="3rd"
+                                        android:textColor="#333333"
+                                        android:textStyle="bold"
+                                        android:textSize="16dp"/>
+
+                                    <customfonts.MyRegulerText
+                                        android:background="@drawable/table_background_border"
+                                        android:paddingLeft="5dp"
+                                        android:gravity="left"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/expert_third_suspension_condition"
+                                        android:textColor="#333333"
+                                        android:textSize="16dp"/>
+
+                                    <customfonts.MyRegulerText
+                                        android:background="@drawable/table_background_border"
+                                        android:id="@+id/duration_3"
+                                        android:gravity="center"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="3 Days"
+                                        android:textColor="#333333"
+                                        android:textStyle="bold"
+                                        android:textSize="16dp"/>
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:background="@drawable/table_background_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <customfonts.MyRegulerText
+                                        android:background="@drawable/table_background_border"
+                                        android:id="@+id/level_4"
+                                        android:gravity="center"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="4th"
+                                        android:textColor="#333333"
+                                        android:textStyle="bold"
+                                        android:textSize="16dp"/>
+
+                                    <customfonts.MyRegulerText
+                                        android:background="@drawable/table_background_border"
+
+                                        android:paddingLeft="5dp"
+                                        android:gravity="left"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/expert_fourth_suspension_condition"
+                                        android:textColor="#333333"
+                                        android:textSize="16dp"/>
+
+                                    <customfonts.MyRegulerText
+                                        android:background="@drawable/table_background_border"
+                                        android:id="@+id/duration_4"
+                                        android:gravity="center"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="7 Days"
+                                        android:textColor="#333333"
+                                        android:textStyle="bold"
+                                        android:textSize="16dp"/>
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:background="@drawable/table_background_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <customfonts.MyRegulerText
+                                        android:background="@drawable/table_background_border"
+                                        android:id="@+id/level_5"
+                                        android:gravity="center"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="5th"
+                                        android:textColor="#333333"
+                                        android:textStyle="bold"
+                                        android:textSize="16dp"/>
+
+                                    <customfonts.MyRegulerText
+                                        android:background="@drawable/table_background_border"
+
+                                        android:paddingLeft="5dp"
+                                        android:gravity="left"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/expert_fifth_suspension_condition"
+                                        android:textColor="#333333"
+                                        android:textSize="16dp"/>
+
+                                    <customfonts.MyRegulerText
+                                        android:background="@drawable/table_background_border"
+                                        android:id="@+id/duration_5"
+                                        android:gravity="center"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="14 Days"
+                                        android:textColor="#333333"
+                                        android:textStyle="bold"
+                                        android:textSize="16dp"/>
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:background="@drawable/table_background_border"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <customfonts.MyRegulerText
+                                        android:background="@drawable/table_background_border"
+                                        android:id="@+id/level_6"
+                                        android:gravity="center"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="Termination"
+                                        android:textColor="#333333"
+                                        android:textStyle="bold"
+                                        android:textSize="16dp"/>
+
+                                    <customfonts.MyRegulerText
+                                        android:background="@drawable/table_background_border"
+
+                                        android:paddingLeft="5dp"
+                                        android:gravity="left"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/expert_termination_condition"
+                                        android:textColor="#333333"
+                                        android:textSize="16dp"/>
+
+                                    <customfonts.MyRegulerText
+                                        android:background="@drawable/table_background_border"
+                                        android:id="@+id/duration_6"
+                                        android:gravity="center"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="Account will be permanently Terminated"
+                                        android:textColor="#333333"
+                                        android:textStyle="bold"
+                                        android:textSize="16dp"/>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                    <customfonts.MyRegulerText
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Restrictions during suspension period"
+                        android:textStyle="bold"
+                        android:textColor="#1269Ba"
+                        android:textSize="22dp"/>
+                    <LinearLayout
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <customfonts.MyRegulerText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/expert_suspension_policy_restriction_first_heading_detail"
+                                android:textColor="#000000"
+                                android:textSize="16dp"/>
+
+                            <customfonts.MyRegulerText
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/expert_suspension_policy_restriction_second_heading_detail"
+                                android:textColor="#000000"
+                                android:textSize="16dp"/>
+
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+                    <View
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#56000000"/>
+
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

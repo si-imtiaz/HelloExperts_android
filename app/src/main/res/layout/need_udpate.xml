@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/round_corner_bg_need_update">
+
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/update_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/updates_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="New updates available"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_below="@+id/updates_title"
+            android:id="@+id/upates_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#333"
+            android:text="We've updated the app so now it's more useful and simpler to use. You'll need to download the latest version from the Google playstore before you continue."
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            />
+
+
+
+
+
+        <LinearLayout
+            android:layout_below="@+id/upates_summary"
+            android:layout_marginTop="10dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/not_now"
+
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/skip_question_btn"
+                android:textColor="#fff"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Not now"/>
+
+            <TextView
+                android:id="@+id/update"
+                android:textStyle="bold"
+                android:text="Update"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@drawable/btnformate"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

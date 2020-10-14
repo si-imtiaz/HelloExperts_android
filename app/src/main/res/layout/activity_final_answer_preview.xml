@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.HelloExperts.HelloExpert.Final_answer_preview">
+    <RelativeLayout
+        android:id="@+id/question_no_available_section_in_final"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/white">
+        <LinearLayout
+            android:id="@+id/question_no_available_in_final"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+
+            <customfonts.MyRegulerText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/question_no_available_header"
+                android:layout_weight="5"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                android:textColor="#1269Ba"
+
+                />
+
+
+        </LinearLayout>
+        <View
+            android:layout_below="@+id/question_no_available_in_final"
+            android:id="@+id/question_no_available_line"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="3dp"
+            android:background="@color/btn_color"/>
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:layout_below="@+id/question_no_available_line"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/question_time_out"
+                android:layout_marginBottom="10dp"/>
+            <customfonts.MyRegulerText
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/question_no_available_text_line_one"
+                android:layout_weight="5"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/red"
+
+                />
+            <customfonts.MyRegulerText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/question_no_available_text_line_two"
+                android:layout_weight="5"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/red"
+
+                />
+            <customfonts.MyRegulerText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/try_another_question_in_final"
+                android:text="Try another question"
+                android:layout_marginTop="15dp"
+                android:layout_weight="5"
+                android:textSize="18sp"
+                android:textStyle=""
+                android:gravity="center"
+                android:textColor="#337ab7"
+
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <cn.iwgang.countdownview.CountdownView
+        android:visibility="invisible"
+        android:id="@+id/answer_submission_time_in_final"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        app:isHideTimeBackground="false"
+        app:isShowDay="false"
+        app:isShowMillisecond="false"
+        app:isShowHour="true"
+        app:isShowMinute="true"
+        app:isShowSecond="true"
+        app:suffixGravity="center"
+        app:suffixTextColor="#000000"
+        app:suffixTextSize="25sp"
+        app:timeBgDivisionLineSize="1dp"
+        app:timeBgRadius="5dp"
+        app:timeBgSize="40dp"
+        app:timeTextColor="#FFFFFF"
+        app:timeTextSize="25sp"/>
+
+    <RelativeLayout
+        android:id="@+id/final_answer_preview_section"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <ScrollView
+
+
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="75dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <customfonts.MyRegulerText
+
+                    android:id="@+id/question_description_heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Question Description:"
+                    android:textColor="#333333"
+                    android:textSize="15sp"
+                    android:layout_margin="20dp"/>
+                <WebView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@+id/question_description_heading"
+                    android:id="@+id/question_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <View
+                    android:id="@+id/question_and_answer_divider"
+                    android:layout_below="@+id/question_description"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="1dp"
+                    android:background="#DCDCDC"/>
+                <customfonts.MyRegulerText
+                    android:layout_below="@+id/question_and_answer_divider"
+                    android:id="@+id/your_answer_heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your Answer:"
+                    android:textColor="#333333"
+                    android:textSize="15sp"
+                    android:layout_margin="20dp"/>
+                <WebView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+
+                    android:layout_below="@+id/your_answer_heading"
+                    android:id="@+id/temp_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/edit_and_submit_section"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp">
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/edit_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_answer_btn"
+                android:text="Edit Answer"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:padding="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                />
+            <Button
+                android:id="@+id/final_submit_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit Answer"
+                android:background="@drawable/final_answer_btn_disable"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/main_loader_final_preview_bg"
+        android:background="#A1000000"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/recent_loader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AVLoadingIndicatorView"
+            android:visibility="visible"
+            app:indicatorName="SquareSpinIndicator"
+            app:indicatorColor="@color/white"
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>

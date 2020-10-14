@@ -1,0 +1,314 @@
+<resources>
+    <string name="app_name">HelloExperts</string>
+    <string name="title_activity_dashboard">dashboard</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_sign_out">Sign out</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_new_questions">Newly posted questions</string>
+    <string name="menu_recent_activity">Recent Activity</string>
+    <string name="menu_all_questions">Questions</string>
+    <string name="menu_all_answers">My Answers</string>
+
+    <string name="menu_expert_faq">Expert FAQ\'s</string>
+    <string name="menu_complaints">Contact Us</string>
+    <string name="menu_expert_answering_guideline">Expert Answering Guideline</string>
+    <string name="menu_expert_suspension_policies">Expert Suspension Policies</string>
+    <!--    <string name="menu_expert_bonus_policy">Expert Bonus Policy</string>-->
+
+
+    <string name="menu_add_withdraw_payment_source">Add Withdraw Payment Source</string>
+    <string name="menu_my_withdraw_payment_source">My Withdraw Payment Source</string>
+    <string name="menu_withdraw_pending_earning">Withdraw Pending Earning</string>
+    <string name="menu_my_withdraw_history">My Withdraw History</string>
+    <string name="menu_sign_out">Sign out</string>
+
+
+    ////////////////////////////////////////////////////////
+    <string name="skip_question_note">This question will be no longer available to you after skipping.</string>
+    <!--    <string name="skip_question_note">Kindly make it sure on skipping this question, it will be no longer available to you:</string>-->
+    <string name="skip_question_header">You are about to Skip this Question</string>
+    <string name="skip_question_select_text">Please select any one reason for skipping this question:</string>
+    <string name="error_select_option_skip">At least select one of them:</string>
+    <string name="question_no_available_header">Question No longer Available</string>
+    <string name="question_no_available_text_line_one">The time to answer this question has been lapsed.</string>
+    <string name="question_no_available_text_line_two">Now you cannot answer this question.</string>
+
+    <string name="skip_question_timeout_text_line_one">The time to skip this question has been lapsed.</string>
+    <string name="skip_question_timeout_text_line_two">If you choose to skip this question now, you will face an account suspension.</string>
+
+    <string name="final_answer_preview_header">Final Answer Preview</string>
+
+    <string name="terms_and_condition_question_header">You are about to lock this question</string>
+    <string name="terms_and_condition_question_header_note">By pressing the Answer Now button you acknowledge that you have read and understood the following terms and conditions:</string>
+
+
+    <string name="error_select_terms">
+        You have to check all terms to answer this question.
+    </string>
+    /* Terms and condition */
+    <string name="terms_condition_1">
+        I understand that maximum time allocated to answer this question is 4 hours.
+    </string>
+    <string name="terms_condition_2">I understand that the question is complete in all respects and I have the expertise to provide a<strong>quality answer</strong> to this question.
+
+
+    </string>
+    <string name="terms_condition_3">I understand that <strong>plagiarized answers</strong> will be rejected and my account will be terminated.
+
+    </string>
+    <string name="terms_condition_4">I understand that my answer should ideally be written in text form and I should add <strong>quality images</strong> where necessary to support my answer.
+
+    </string>
+
+    <string name="terms_condition_5">I understand that failure to comply with the above stated terms may result in <strong>account suspension.</strong>
+    </string>
+
+
+    ////////////////////////////////////////////////////////
+
+
+    <string name="about_yourself_api_url">https://www.helloexperts.com/index.php?main_page=expert_post_requests</string>
+    <string name="expert_images_url">https://www.helloexperts.com/images/expert_prof_images/</string>
+
+
+    /* -- Start of Expert FAQ'S --*/
+
+    <string name="question_1">1. How much will I earn for answering questions?</string>
+    <string name="answer_1">You will earn a fix price (depending upon difficulty level of question) for each answer accepted. The amount you have earned will be shown in your local currency.</string>
+    <string name="question_2">2. When can I withdraw my earnings?</string>
+    <string name="answer_2">The system will automatically withdraw your earnings once a week if the earnings are more than the minimum threshold set.</string>
+    <string name="question_3">3. What are the payment methods that I can use to withdraw my earnings?</string>
+    <string name="answer_3">You can withdraw your money through PayPal or Wire transfer.</string>
+    <string name="question_4">4. Are there any transaction fees to withdraw my earnings?</string>
+    <string name="answer_4">No. There are no transaction procession fee or transfer fees to withdraw your earnings.</string>
+    <string name="question_5">5. How can I apply to become an expert on HelloExperts.com?</string>
+    <string name="answer_5">You can become an expert on HelloExperts.com by signing up and filling an expert application form.</string>
+    <string name="question_6">6. When will I become an expert and be able to answer questions?</string>
+    <string name="answer_6">If your application is considered further, your probation will start during which you will be able to answer questions. You will become an expert as soon as your 5 answers are accepted.</string>
+    <string name="question_7">7. When do I start earning money?</string>
+    <string name="answer_7">You can start earning as soon as your 5 answers are accepted. The answers during your probation will not be considered for earning purposes.</string>
+    <string name="question_8">8. How do I know when a new question is posted?</string>
+    <string name="answer_8">You will receive an email for every new question posted. You can access questions from your email and also from your expert account.</string>
+    <string name="question_9">9. Where can I find the questions to answer?</string>
+    <string name="answer_9">You can click the questions button on your dashboard to access all the posted questions. To answer a question you have to click the question and then click on the lock and answer button.</string>
+    <string name="question_10">10. How many questions can I lock to answer at a time?</string>
+    <string name="answer_10">You will be able to lock one question at a time. When you have locked a question you cannot answer any other question until you answer the locked question first.</string>
+    <string name="question_11">11. What is the maximum time allowed to answer a question?</string>
+    <string name="answer_11">You have to answer a question within 4 hours after you lock a question. After that, the question will no longer visible to you and you will not be able to answer that question.</string>
+    <string name="question_12">12. When will my answer be accepted?</string>
+    <string name="answer_12">When you submit an answer it will be under review by quality assurance teams. Some of your answers might get rejected if certain quality checks are not met. You will not be paid for answers that were rejected.</string>
+    <string name="question_13">13. What are the requirements for an answer to get accepted?</string>
+    <string name="answer_13">Your answer will be accepted if it is detailed, well explained and has no plagiarism. Moreover, your answer should be completed as per the requirements and correct in all respects.</string>
+    <string name="question_14">14. Why my expert account is restricted?</string>
+    <string name="answer_14">If your 5 answers are rejected your expert account will be restricted for 10 days. You will not be able to answer the questions while your account is restricted</string>
+    <string name="question_15">15. When an account restriction is applied?</string>
+    <string name="answer_15">Your account might face restriction due to the following reasons:
+        \n
+        \u2022 Operating multiple accounts \n
+        \u2022 Plagiarized answers \n
+        \u2022 Copying material or answers \n
+        \u2022 Multiple answers rejected \n
+        \u2022 Using promotional material \n
+        \u2022 Spamming \n
+        \u2022 Other reasons \n
+    </string>
+    <string name="question_16">16. How can I avoid account restriction?</string>
+    <string name="answer_16">The goal of this code is to make HelloExperts.com communication system as safe and professional as possible. It is important, as an Expert that you know and follows your obligations, while using the HelloExperts.com platform, so that you can succeed and thrive on the platform.</string>
+    /* -- End of Expert FAQ'S --*/
+
+
+    /* -- Start of Answering Guidelines --*/
+
+
+    <string name="answer_guideline_first_paragraph">Hello Experts, our team is very happy to welcome you as a candidate to become a Subject Expert for our answering portal! Being an Expert on HelloExperts.com will give you the ability to work directly with our student users, who will post questions that are giving them trouble. Students post questions every single day and you will be able to help them by providing detailed answers with clear and step-by-step explanations. Our team is committed to ensuring all students receive the best quality answers with help from Subject Experts like you. Our In-house team reviews the quality of your answers, ensuring that they are relevant, well-explained and easy to understand for students.</string>
+    <string name="our_code_of_honor_paragraph">HelloExperts has a strict code of honor which instills the best practices possible in our Experts. We ensure that students receive quality help from experts and that the help is free from academic misconduct of any kind. If a student posts a question that is an assignment or an online exam, the experts are advised to strictly adhere to this code of integrity and avoid getting involved in any form of academic dishonesty.</string>
+    <string name="basic_answering_guide_paragraph">Experts can see posted questions on their expert dashboards. The questions may have different prices based on the varying question type. The expert can see and select the question they wish to complete and then view the requirements. After carefully reviewing the requirements of a question, the expert can either leave the question or lock the question to post an answer to it. When a question is locked by an expert, that question cannot be seen by other experts any longer.</string>
+
+    <string name="answer_writing_style_first">Once you have selected and locked a question, you can answer the question in one of three styles.</string>
+    <string name="answer_writing_style_first_heading">1. Typed Answers:</string>
+    <string name="answer_writing_style_first_heading_detail">Typed answers are always preferred. Experts should always go for a typed answer which is well-formatted, unless for some reason a question’s answer can be better explained with handwritten sketches or diagrams.</string>
+    <string name="answer_writing_style_second_heading">2. Hand-written Answers:</string>
+    <string name="answer_writing_style_second_heading_detail">Experts are allowed to produce an answer on a paper with a legible handwriting and then take a clear picture of the answer and then upload it in the answer space provided. Remember, blurred images or images with illegible contents will not be accepted as answers.</string>
+    <string name="answer_writing_style_third_heading">3. Typed Answers with supporting images:</string>
+    <string name="answer_writing_style_third_heading_detail">Experts are encouraged to use this style when the question requires an explanation with additional graphs or process flow diagrams. Even if a question does not necessarily require additional images to explain experts are still encouraged to use this style for better understanding from the students.</string>
+
+    <string name="best_practices_to_adopt_first_heading">1. Read and answer the requirements carefully:</string>
+    <string name="best_practices_to_adopt_first_heading_detail">You should focus on the requirements of the questions and read them carefully. The HelloExperts team has the right to revoke an answer if it is not relevant to the question’s requirements, do not merely post general statements tied to the topic.</string>
+    <string name="best_practices_to_adopt_second_heading">2. Answers should be well explained:</string>
+    <string name="best_practices_to_adopt_second_heading_detail">Your answers should not be too short or brief, but rather they should be as detailed as possible. Currently there is no word count for an answer and the answer will be accepted or rejected based on the question type. You should choose appropriate answer style and format to make it easily understood by students.</string>
+    <string name="best_practices_to_adopt_third_heading">3. Respond to all requirements:</string>
+    <string name="best_practices_to_adopt_third_heading_detail">Experts are advised to respond to all the requirements of the questions, if the question has multiple parts you must addresses each part in your answer. Partial answers will not be accepted.</string>
+
+    <string name="action_to_strictly_avoid_first_heading">1. Plagiarism:</string>
+    <string name="action_to_strictly_avoid_first_heading_detail">Plagiarism is the act of copying someone else’s work and representing it as your own in any way. Our team will review answers and no credit will be given to answers with partial or fully plagiarized answers.</string>
+    <string name="action_to_strictly_avoid_second_heading">2. Copying answers from other sources:</string>
+    <string name="action_to_strictly_avoid_second_heading_detail">Experts answers that are fully or partially copied from other sources will be rejected, your work should be your own.</string>
+    <string name="action_to_strictly_avoid_third_heading">3. Incorporating non-original images:</string>
+    <string name="action_to_strictly_avoid_third_heading_detail">Answers incorporating any non- original graphical and supporting content that is either taken from search engines, screenshots of diagrams from books, etc, will not be accepted, supporting graphics must be fair use or your original work.</string>
+    <string name="action_to_strictly_avoid_fourth_heading">4. Incomplete answers:</string>
+    <string name="action_to_strictly_avoid_fourth_heading_detail">If the question is not fully answered do not submit your response until it is fully answered. Once an incomplete answer is submitted it cannot be adjusted and will not be accepted.</string>
+    <string name="action_to_strictly_avoid_fifth_heading">5. Generalized answers:</string>
+    <string name="action_to_strictly_avoid_fifth_heading_detail">Experts should answer each question requirements specifically.</string>
+
+    <string name="suspension_policy_first_heading_detail">1. Answers partially or copied from online help websites.</string>
+    <string name="suspension_policy_second_heading_detail">2. Requesting or sharing personal information or help outside of HelloExperts.com.</string>
+
+    <string name="note_expert_answer_guideline">If experts are found to be abusing answering privileges for any reason, we reserve the right to deactivate/close such accounts immediately and review all previous work for payment validation.</string>
+
+    /* -- End of Answering Guidelines --*/
+
+    /* -- Start of Suspension Policies --*/
+
+    <string name="expert_suspension_policy_first_paragraph">HelloExperts has become a popular earning source through answering questions posted by students. We gladly appreciate the experts who have managed to maintain quality of answers they provide. However, for some of the experts, answers are rejected because they do not comply our answering policies. As a result these experts face temporary suspension of their accounts and they are restricted to answer any questions during the suspension period. Our teams are continuously monitoring the answers quality based on the answering policies to ensure that the experts are providing quality answers to the questions asked by students.</string>
+    <string name="expert_suspension_policy_first_heading">1. Poor quality of answers</string>
+    <string name="expert_suspension_policy_first_heading_detail">As a general rule, the suspension will be automatically applied to the experts who have not maintained a minimum of 40% answers acceptance ratio. The details about how the suspension will apply are as follows:</string>
+    <string name="expert_suspension_policy_second_heading">2. When question is locked and not answered</string>
+    <string name="expert_suspension_policy_second_heading_detail">When an expert locks a question he / she can decide to answer that question or skip that question within an allowed time of 30 minutes. During the time a question is locked no other expert can see the same question. If an expert holds a question for more than 30 minutes and does not decide to answer or skip that question, this suspension applies. By holding a question locked restricts other experts from answering a question. Experts are highly recommended to not to LOCK a question for more than lock time allowed. If they can’t answer a question they should skip the question within the allowed time limit. The details about how the suspension will apply are as follows:</string>
+    <string name="expert_suspension_policy_restriction_first_heading_detail">All experts facing suspension will not be allowed to answer any questions during the suspension period. The expert will not be able to submit the answer if suspension applies during the process of answering a question.</string>
+    <string name="expert_suspension_policy_restriction_second_heading_detail">Also the withdrawal requests initiated by the suspended experts will not be processed and the funds will be on hold until the suspension period has ended.
+
+In case an expert is terminated the available earnings will be lost and HelloExperts will not be held liable to pay such earnings.</string>
+    <string name="expert_first_suspension_condition">(i) If less than 8/20 answers are accepted or \n(ii) If a question is locked for more than 30 minutes and no answer submitted</string>
+    <string name="expert_second_suspension_condition">(i) If first consecutive 3/10 answers are not accepted after 1st suspension has expired.\n(ii) If less than 8/20 answers are accepted after 1st suspension has expired.\n(iii) If a question is locked for more than 30 minutes and no answer submitted.</string>
+    <string name="expert_third_suspension_condition">(i) If first consecutive 3/10 answers are not accepted after 2nd suspension has expired.\n(ii) If less than 8/20 answers are accepted after 2nd suspension has expired.\n(iii) If a question is locked for more than 30 minutes and no answer submitted.</string>
+    <string name="expert_fourth_suspension_condition">(i) If first consecutive 3/10 answers are not accepted after 3rd suspension has expired.\n(ii) If less than 8/20 answers are accepted after 3rd suspension has expired.\n(iii) If a question is locked for more than 30 minutes and no answer submitted.</string>
+    <string name="expert_fifth_suspension_condition">(i) If first consecutive 3/10 answers are not accepted after 4th suspension has expired.\n(ii) If less than 8/20 answers are accepted after 4th suspension has expired.\n(iii) If a question is locked for more than 30 minutes and no answer submitted.</string>
+    <string name="expert_termination_condition">(i) If first consecutive 3/10 answers are not accepted after 5th suspension has expired.\n(ii) If less than 8/20 answers are accepted after 5th suspension has expired.\n(iii) If a question is locked for more than 30 minutes and no answer submitted.</string>
+
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Subsidiary of \nSolutionInn, US</string>
+    <string name="slide_1_desc">It is providing educational services to the students all over the world. Join the community, contribute your knowledge and earn money</string>
+
+
+    <string name="slide_2_title">Become a Subject Expert</string>
+    <string name="slide_2_desc">Join and apply to become a subject matter expert with your recent qualification.</string>
+
+
+    <string name="slide_3_title">Submit the Best Answer</string>
+    <string name="slide_3_desc">Provide the best answer in the shortest time and get rated by students.</string>
+
+
+    <string name="slide_4_title">Get Paid</string>
+    <string name="slide_4_desc">Receive payment for every best answer.</string>
+    <string name="menu_locked_question">Locked Question</string>
+
+    <string name="withdraw_payment_url">https://www.helloexperts.com/add-withdraw-source</string>
+
+
+    /* -- Start of Complains FAQ's --*/
+    <string name="question_faq_1">1. Where will I see my earnings?</string>
+    <string name="answer_faq_1">You can view your earnings under the head “Expert Earnings”on your expert dashboard.</string>
+    <string name="question_faq_2">2. What is the payment cycle?</string>
+    <string name="answer_faq_2">The withdrawal request is automatically generated every Tuesday. After the request generation, it takes us around 2 to 3 working days to release your payment.</string>
+    <string name="question_faq_3">3. What are the payment methods for earnings withdrawal?</string>
+    <string name="answer_faq_3">You can withdraw your earnings using PayPal account or Wire transfer.</string>
+    <string name="question_faq_4">4. Can I change my payment method?</string>
+    <string name="answer_faq_4">
+     Yes, you can update your payment method. Follow the steps below to update it.
+        \n
+        \u2022 Click on your Profile icon at the top right corner of your dashboard. \n
+        \u2022 Select Withdraw Payments from the drop-down menu. \n
+        \u2022 You can add your new withdrawal source by selecting + icon.
+
+    </string>
+    <string name="question_faq_5">5. Where can I see my transaction history?</string>
+    <string name="answer_faq_5">
+
+       In order to view your transaction history follow the steps below.
+        \n
+        \u2022 Click on your Profile icon at the top right corner of your dashboard. \n
+        \u2022 Select Finances> Transaction History from the drop-down menu.
+
+    </string>
+    <string name="question_faq_6">6. Why my payment is declined?</string>
+    <string name="answer_faq_6">If your payment is declined it may be because of an unverified withdrawal method. Please verify your withdrawal method or provide an alternative source to release your payment.</string>
+    <string name="question_faq_7">7. Why my earnings are not being updated?</string>
+    <string name="answer_faq_7">An Expert is paid for every accepted answer other than probation period. At times, due to some temporary technical glitch/delay, there might appear some issue regarding answer count being less or not being updated. If your count does not get updated within 24 hours, </string>
+
+
+    <string name="question_faq_8">8. I live outside US, can I still apply for an expert?</string>
+    <string name="answer_faq_8">Yes, you can apply for being an expert irrespective of your nationality and region.</string>
+    <string name="question_faq_9">9. What is the eligibility criteria for an Expert?</string>
+    <string name="answer_faq_9">You must have passed the first year of your Bachelor’s degree in order to apply for being an Expert.</string>
+    <string name="question_faq_10">10. What is the Registration Process?</string>
+    <string name="answer_faq_10">The registration process is simple and takes hardly 10 minutes if you are well prepared. Please visit Registration Guidelines to know more about it.</string>
+
+
+    <string name="question_faq_11">11. My college/ university is not in the list, what should I do?</string>
+    <string name="answer_faq_11">If your university name is not included in the prescribed list, you can type your university name by selecting the “Other” option</string>
+
+    <string name="question_faq_12">12. What is the profile verification process?</string>
+    <string name="answer_faq_12">When you meet your minimum earnings threshold after clearing your probation period, your profile information is verified against your provided documents.</string>
+    <string name="question_faq_13">13. Do I have to use my original name as an Expert?</string>
+    <string name="answer_faq_13">You must provide your original details as they will be matched against your provided government issued documents. However, your username will be generated via auto-system.</string>
+    <string name="question_faq_14">14. I am a tutor but now I want to apply for an Expert, can I do that?</string>
+    <string name="answer_faq_14">Yes, you can work as both tutor and expert simultaneously. Please register yourself at HelloExperts webpage.</string>
+
+    <string name="question_faq_15">15. What happens in probation period?</string>
+    <string name="answer_faq_15">When you register yourself at Helloexperts, you are placed in the Probation Period during which you have to answer 5 questions. Your answers are closely monitored by our QA department to assess your skills and quality of answers.</string>
+    <string name="question_faq_16">16. Is there any payment for questions solved during probation period?</string>
+    <string name="answer_faq_16">No, you will not be paid for your Probation answers.</string>
+    <string name="question_faq_17">17. Being an expert, can I post any question?</string>
+    <string name="answer_faq_17">No unfortunately, this service is only available for students.</string>
+    <string name="question_faq_18">18. What are the guidelines to follow in answering the questions?</string>
+    <string name="answer_faq_18">Please visit Expert Answering Guidelines for detailed information.</string>
+    <string name="question_faq_19">19. Is there any reward for answering more questions?</string>
+    <string name="answer_faq_19">Yes, please visit Expert Bonus Policy for complete information.</string>
+    <string name="question_faq_20">20. I forgot my account password, how can I reset it?</string>
+    <string name="answer_faq_20">If you forgot your password, you can reset your password by clicking on Forget Password under the SignIn dialogue box. You will receive an email containing your new password information.</string>
+    <string name="question_faq_21">21. Why am I unable to lock any question?</string>
+    <string name="answer_faq_21">
+        If you are unable to lock any question, there may be the following reasons:
+        \n
+        \u2022 Your account might be suspended. Please visit Expert Suspension Policies to know more about your account suspension. \n
+        \u2022 It can be because of some temporary glitch, please try again after some time.
+    </string>
+
+    <string name="question_faq_22">22. How many questions may I skip?</string>
+    <string name="answer_faq_22">You can skip questions as many as you want within 30 minutes of locking the questions.</string>
+    <string name="question_faq_23">23. I received a question from different subject, can I solve the question if I know the answer?</string>
+    <string name="answer_faq_23">Yes, you can answer if you are confident about the solution. You need to make sure that the answer must be explained step by step.</string>
+    <string name="question_faq_24">24. May I know the reason for answer rejection?</string>
+    <string name="answer_faq_24">All the possible rejection reasons include the violation of the Expert Answering Guidelines.</string>
+    <string name="question_faq_25">25. Is there any limit to solve questions in a day?</string>
+    <string name="answer_faq_25">No, there is no limit to questions solved in a day.</string>
+    <string name="question_faq_26">26. How would I know if my answer is accepted or rejected?</string>
+    <string name="answer_faq_26">After you submit an answer, it will take around 3 to 5 business days for our QA department to review your answer. You will get notified via email about the status of your answer.</string>
+    <string name="question_faq_27">27. What will happen in case of submission of incomplete answer due to power breakdown or associated technical problems?</string>
+    <string name="answer_faq_27">Incomplete answers due to any reason shall not be accepted.</string>
+    <string name="question_faq_28">28. How can I improve my performance score?</string>
+    <string name="answer_faq_28">Your performance score is directly related to your number of answers accepted. Please follow Expert Answering Guidelines carefully to get maximum performance score.</string>
+
+
+    <string name="question_faq_29">29. How can I avoid my answer rejection?</string>
+    <string name="answer_faq_29">
+        Please follow Expert Answering Guidelines carefully to avoid any answer rejection. For your convenience, here are some commonly committed errors by Experts:
+        \n
+        \u2022 Plagiarized Answer \n
+        \u2022 Giving Direct Answers to Multiple Choices Questions \n
+        \u2022 Calculation errors \n
+        \u2022 Multiple answers rejected \n
+        \u2022 Not Skipping Incomplete Questions
+    </string>
+    <string name="question_faq_30">30. Can I use third party application services for scanning my answer document?</string>
+    <string name="answer_faq_30">Yes, you can use any third-party application (For example: Cam scanner) to upload and image in answer. Please make sure that you always crop out the logo of third-party application. Failing to do so will result in answer rejection.</string>
+    <string name="question_faq_31">31. Do I get the option to edit an answer after submission?</string>
+    <string name="answer_faq_31">We do not allow an answer to be edited once submitted. Therefore, we recommend you to review your answer carefully before submission.</string>
+    <string name="question_faq_32">32. How do I deactivate or close my expert account?</string>
+    <string name="answer_faq_32">To close your account, feel free to </string>
+    <string name="question_faq_33">33. If my account is suspended for a certain time, will I get the pending payment?</string>
+    <string name="answer_faq_33">If your account is suspended for any reason, you will not be able to get your payment released until the suspension is removed.</string>
+    <string name="question_faq_34">34. Why was my account suspended?</string>
+    <string name="answer_faq_34">Please visit Expert Suspension Policies to know more about your account suspension.</string>
+
+
+</resources>

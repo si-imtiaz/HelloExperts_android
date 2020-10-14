@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.HelloExperts.HelloExpert.Question_view"
+    >
+
+
+    <RelativeLayout
+
+        android:id="@+id/progress_section"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+
+            <com.hmomeni.progresscircula.ProgressCircula
+                android:id="@+id/progressBar"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                app:pgc_indeterminate="true"
+                app:pgc_progress="40"
+                app:pgc_rimColor="@color/header_color"
+                app:pgc_rimWidth="3dp"
+                app:pgc_showProgress="false"
+                app:pgc_speed="1"
+                app:pgc_textColor="#00FF00" />
+            <customfonts.MyRegulerText
+                android:id="@+id/timer_text"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="5"
+                android:textColor="@color/header_color"/>
+
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_below="@+id/already_locked_layout"
+        android:layout_above="@+id/bottom_section"
+        android:id="@+id/question_section"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      >
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <customfonts.MyTextView
+                        android:id="@+id/question_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:visibility="gone"
+                        android:fontFamily="sans-serif"
+                        android:layout_alignParentRight="true"
+                        android:gravity="right"
+                        android:background="@drawable/answer_accepted_background"
+                        android:text="submitted"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp"
+                        />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <WebView
+
+                        android:id="@+id/question_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="325dp"
+
+                        android:scrollbars="vertical"
+                        />
+                    <customfonts.MyRegulerText
+                        android:layout_below="@+id/question_description"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/answer_description_heading"
+                        android:text="Your Answer:"
+                        android:textSize="18dp"
+                        android:visibility="gone"
+                        />
+                    <WebView
+
+                        android:layout_below="@id/answer_description_heading"
+                        android:visibility="gone"
+                        android:id="@+id/answer_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/red"
+                        />
+
+
+                </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/bottom_section"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <customfonts.MyTextView
+            android:visibility="visible"
+            android:id="@+id/lock_and_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOCK &amp; ANSWER NOW"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/btnformate"
+            android:layout_centerInParent="true"
+            />
+        <customfonts.MyTextView
+            android:visibility="gone"
+            android:id="@+id/account_suspended_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ACCOUNT SUSPENDED"
+            android:textColor="@color/red"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            />
+
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/terms_and_conditions_section"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="@color/white"
+            >
+
+            <RelativeLayout
+                android:id="@+id/terms_and_conditions_header_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                >
+
+                <customfonts.MyRegulerText
+                    android:layout_centerVertical="true"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terms_and_condition_question_header"
+                    android:layout_weight="5"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:textColor="#1269Ba"
+
+                    />
+
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/terms_and_conditions_close_btn"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/cross_icon_black"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    />
+            </RelativeLayout>
+            <View
+                android:layout_below="@+id/terms_and_conditions_header_section"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="3dp"
+                android:background="@color/btn_color"/>
+            <ScrollView
+                android:layout_below="@+id/terms_and_conditions_header_section"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <LinearLayout
+
+                android:id="@+id/skip_question_options"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal">
+
+                    <customfonts.MyRegulerText
+                        android:id="@+id/terms_and_conditions_heading_note"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/terms_and_condition_question_header_note"
+                        android:textColor="#414042"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="20dp">
+
+                    <CheckBox
+                        android:id="@+id/terms_and_conditions_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/terms_condition_1"
+
+                        />
+
+                    <CheckBox
+                        android:id="@+id/terms_and_conditions_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/terms_condition_2"
+                        android:layout_marginTop="10dp"
+                        />
+                    <CheckBox
+                        android:id="@+id/terms_and_conditions_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/terms_condition_3"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/terms_and_conditions_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/terms_condition_4"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/terms_and_conditions_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/terms_condition_5"
+                        android:layout_marginTop="10dp"
+                        />
+
+                </LinearLayout>
+
+                <customfonts.MyRegulerText
+                    android:id="@+id/error_select_terms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+
+                    android:text="@string/error_select_terms"
+                    android:textColor="@color/red"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+
+                        android:id="@+id/answer_now"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/answer_submit_btn"
+                        android:padding="10dp"
+                        android:text="Answer now"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                    <Button
+
+                        android:id="@+id/answer_now_cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/answer_now"
+                        android:layout_toLeftOf="@+id/answer_now"
+                        android:background="@drawable/see_question_answer_submission_button"
+                        android:padding="10dp"
+                        android:text="Cancel"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+
+
+
+    <LinearLayout
+
+        android:id="@+id/already_locked_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/already_locked_background"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        >
+        <customfonts.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You have already locked a question"
+            android:textSize="16dp"
+            android:id="@+id/notification_text"
+            android:textColor="#31708f"
+            />
+
+        <customfonts.MyTextView
+            android:id="@+id/already_locked_answer_now"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Answer Now"
+            android:background="@drawable/btnformate"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_loader_question_view_bg"
+        android:background="#A1000000"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/recent_loader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AVLoadingIndicatorView"
+            android:visibility="visible"
+            app:indicatorName="SquareSpinIndicator"
+            app:indicatorColor="@color/white"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

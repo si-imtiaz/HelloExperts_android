@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/nav_header_main_layout"
+    android:layout_height="265dp"
+    android:orientation="vertical"
+    android:background="@drawable/drawer_background"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+
+<ImageView
+    android:layout_marginTop="15dp"
+    android:layout_width="180dp"
+    android:layout_height="25dp"
+    android:src="@drawable/logo_helloexperts_white"
+    android:layout_gravity="center"
+    android:layout_marginBottom="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/user_icon"
+            android:contentDescription="@string/nav_header_desc"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            />
+    </LinearLayout>
+
+
+    <customfonts.MyTextView
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:textColor="@color/white"
+        android:text="@string/nav_header_title"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <customfonts.MyTextView
+        android:id="@+id/user_email"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/nav_header_subtitle" />
+
+<customfonts.MyTextView
+    android:id="@+id/pending_payments"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="#414042"
+    android:background="@drawable/pending_payment_background"
+    android:text="Pending Payment : 800 PKR"
+    android:textSize="12dp"
+    android:textStyle="bold"
+    android:layout_marginLeft="30dp"
+    android:paddingLeft="20dp"
+    android:gravity="left"/>
+    <customfonts.MyTextView
+        android:id="@+id/experts_score"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#414042"
+        android:background="@drawable/pending_payment_background"
+        android:text="Expert Score : 80%"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:paddingLeft="20dp"
+        android:gravity="left"/>
+
+    <RelativeLayout
+        android:id="@+id/withdraw_section"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginLeft="30dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/pending_payment_background">
+        <customfonts.MyTextView
+
+            android:visibility="gone"
+            android:id="@+id/withdraw_payments"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#414042"
+            android:layout_alignParentLeft="true"
+            android:text="Withdraw Payment : 800 PKR"
+            android:textSize="12dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:gravity="left"/>
+        <customfonts.MyTextView
+
+            android:visibility="gone"
+            android:layout_below="@+id/withdraw_payments"
+            android:id="@+id/withdraw_status"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/answer_in_progress_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Pending"/>
+
+
+    </RelativeLayout>
+
+    <customfonts.MyTextView
+        android:visibility="gone"
+        android:id="@+id/withdraw_heading_and_date"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#414042"
+        android:background="@drawable/pending_payment_background"
+        android:text="Withdraw Payment : 800 PKR"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:paddingLeft="20dp"
+        android:gravity="left"/>
+    <customfonts.MyTextView
+
+        android:visibility="gone"
+        android:id="@+id/bonus_payments"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#414042"
+        android:background="@drawable/pending_payment_background"
+        android:text="Bonus Payment : 800 PKR"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:paddingLeft="20dp"
+        android:gravity="left"/>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:id="@+id/probation_answers_count_section"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/pending_payment_background"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp">
+
+        <customfonts.MyRegulerText
+            android:id="@+id/submitted_answers_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submitted Answers:"
+            android:textColor="#414042"
+            android:textSize="12dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+
+            />
+
+        <customfonts.MyRegulerText
+            android:id="@+id/approved_answers_count"
+            android:layout_below="@+id/submitted_answers_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Approved Answers:"
+            android:textColor="#414042"
+            android:textSize="12dp"
+            android:layout_marginLeft="20dp"
+
+            />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

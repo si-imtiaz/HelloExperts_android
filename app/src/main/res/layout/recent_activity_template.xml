@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/list_template"
+    android:orientation="vertical"
+    android:padding="3dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp">
+
+            <customfonts.MyTextView
+                android:id="@+id/recent_activity_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Hi i need a help in this question please help me regarding this"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="9dp"
+
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    app:srcCompat="@drawable/ic_access_time_black_24dp"/>
+                <customfonts.MyTextView
+                    android:padding="5dp"
+                    android:id="@+id/recent_activity_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="16 minutes ago"
+                    android:layout_weight="1"
+                    android:textSize="10dp"
+                    android:textStyle="italic"
+                    />
+
+
+                <customfonts.MyTextView
+                    android:padding="5dp"
+                    android:id="@+id/recent_activity_status"
+                    android:layout_weight="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Accepted"
+                    android:background="@drawable/accepted_background"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

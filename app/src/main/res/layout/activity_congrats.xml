@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:scrollbars="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.HelloExperts.HelloExpert.Sign_up_finish">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/sign_out_from_page_vi"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:src="@drawable/logout"/>
+        <customfonts.MyRegulerText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:padding="14dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Congratulations"
+            android:textSize="20dp"
+            android:textColor="#414042"
+            />
+        <customfonts.MyRegulerText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:paddingTop="14dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:gravity="center"
+            android:text="Your Expert Application has been successfully submitted and your probation period has started.
+            You will get 5 questions to complete in the next step. Just answer and submit them for review."
+            android:textSize="14dp"
+            android:textColor="#414042"
+            />
+        <customfonts.MyRegulerText
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:padding="14dp"
+            android:gravity="center"
+            android:text="After your 5 questions are approved you will become Approved Expert."
+            android:textSize="14dp"
+            android:textColor="#414042"
+            />
+
+        <customfonts.MyTextView
+            android:visibility="visible"
+            android:id="@+id/go_to_dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Go to Dashboard"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/btnformate"
+            android:layout_centerInParent="true"
+            />
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

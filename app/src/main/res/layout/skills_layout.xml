@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <customfonts.MyTextView
+            android:id="@+id/main_skill_name"
+            android:paddingLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Business"/>
+            <ImageView
+                android:id="@+id/down_arrow"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/down_arrow"
+                android:layout_marginBottom="10dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+        </RelativeLayout>
+
+
+</LinearLayout>

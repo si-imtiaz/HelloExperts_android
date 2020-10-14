@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+<RelativeLayout
+    android:id="@+id/fixed_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <customfonts.MyTextView
+        android:padding="10dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Questions"
+        android:textColor="@color/white"
+        android:paddingLeft="20dp"
+        android:textSize="20dp"
+        android:background="@color/header_color"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_new_questions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fixed_header">
+    <androidx.recyclerview.widget.RecyclerView
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/newly_questions_recyclerView"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <ImageView
+        android:id="@+id/no_connection_symbol"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/no_internet"
+        android:layout_marginTop="150dp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+      />
+    <customfonts.MyTextView
+        android:id="@+id/no_connection_text"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/no_connection_symbol"
+        android:layout_width="wrap_content"
+        android:textSize="16dp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:text="No internet connection..."
+        />
+    <Button
+        android:id="@+id/try_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Try Again"
+        android:layout_gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:id="@+id/main_loader_newly_posted_questions_bg"
+        android:background="#A1000000"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/recent_loader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AVLoadingIndicatorView"
+            android:visibility="visible"
+            app:indicatorName="SquareSpinIndicator"
+            app:indicatorColor="@color/white"
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>
+

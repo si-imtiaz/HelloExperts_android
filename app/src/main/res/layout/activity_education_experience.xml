@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.HelloExperts.HelloExpert.Education_experience">
+    <RelativeLayout
+        android:id="@+id/logout_layout_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/sign_out_from_page_ii"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/logout"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/logout_layout_section"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:layout_marginBottom="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <customfonts.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingTop="10dp"
+
+                android:paddingLeft="11dp"
+
+                android:gravity="center"
+                android:text="Education Details"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                />
+                <ImageView
+                    android:id="@+id/expand_education_details"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:visibility="gone"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_add_black_24dp"/>
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/education_detail_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+            <customfonts.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:gravity="left"
+                android:text="Degree Level"
+                android:textSize="13dp"
+                android:textColor="#414042"
+                />
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/user_degree_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="-- Select Degree --"/>
+            <customfonts.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:gravity="left"
+                android:text="Degree Name"
+                android:textSize="13dp"
+                android:textColor="#414042"
+                />
+
+            <customfonts.MyEditText
+                android:id="@+id/user_degree_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000"
+                android:background="#f0f0f4"
+                android:layout_weight="1"
+                android:padding="12dp"
+
+                android:drawablePadding="16dp"
+                />
+            <customfonts.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:gravity="left"
+                android:text="Country"
+                android:textSize="13dp"
+                android:textColor="#414042"
+                />
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/user_degree_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Country"/>
+
+                <customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+                    android:gravity="left"
+                    android:text="University"
+                    android:textSize="13dp"
+                    android:textColor="#414042"
+                    />
+
+                <AutoCompleteTextView
+                    android:id="@+id/user_university_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="#000"
+                    android:completionThreshold="1"
+                    android:background="#f0f0f4"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+                    android:drawablePadding="16dp"
+                    />
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/is_still_studying_here"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#414042"
+                    android:text="I currently Study here "/>
+                <customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+                    android:gravity="left"
+                    android:text="Year of Enrollment"
+                    android:textSize="13dp"
+                    android:textColor="#414042"
+                    />
+                <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:id="@+id/user_year_of_enrollment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-- Select Enrollment Year --"/>
+                <customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+                    android:gravity="left"
+                    android:text="Year of Graduation"
+                    android:textSize="13dp"
+                    android:textColor="#414042"
+                    />
+                <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:id="@+id/user_year_of_graduation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-- Select Graduation Year --"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <customfonts.MyTextView
+                        android:id="@+id/cancel_add_education"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cancel"
+                        android:textSize="18dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_toLeftOf="@+id/add_education_details"
+                        android:layout_centerVertical="true"
+                        android:textColor="#4F86C9"/>
+                <customfonts.MyRegulerText
+                    android:id="@+id/add_education_details"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btnformate"
+                    android:textAlignment="center"
+                    android:padding="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+
+                    android:layout_marginTop="20dp"
+                    android:text="Add Education"
+                    android:textSize="14dp"
+                    android:textColor="#fff"
+                    />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="50dp"
+                android:background="#BDB8B8" />
+            <customfonts.MyTextView
+                android:visibility="gone"
+                android:id="@+id/education_added"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:layout_marginBottom="40dp"
+                android:text="Education Details Successfully added"
+                android:textSize="14dp"
+                android:textAlignment="center"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#BDB8B8"
+                />
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <customfonts.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingTop="10dp"
+
+                    android:paddingLeft="11dp"
+
+                    android:gravity="center"
+                    android:text="Professional Details"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    />
+                <ImageView
+                    android:id="@+id/expand_professional_details"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_add_black_24dp"/>
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/professional_detail_area"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+                    android:gravity="left"
+                    android:text="Designation"
+                    android:textSize="13dp"
+                    android:textColor="#414042"
+                    />
+                <customfonts.MyEditText
+                    android:id="@+id/user_designation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="#000"
+                    android:background="#f0f0f4"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+
+                    android:drawablePadding="16dp"/>
+                <customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+                    android:gravity="left"
+                    android:text="Organization"
+                    android:textSize="13dp"
+                    android:textColor="#414042"
+                    />
+
+                <customfonts.MyEditText
+                    android:id="@+id/user_organization"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="#000"
+                    android:background="#f0f0f4"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+
+                    android:drawablePadding="16dp"
+                    />
+                <customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+                    android:gravity="left"
+                    android:text="Job Description"
+                    android:textSize="13dp"
+                    android:textColor="#414042"
+                    />
+                <customfonts.MyEditText
+                    android:id="@+id/user_job_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"
+                    android:textColor="#000"
+                    android:background="#f0f0f4"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+                    android:drawablePadding="16dp"
+                    />
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/is_still_doing_job_here"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#414042"
+                    android:text="I currently work here "/>
+                <customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+                    android:gravity="left"
+                    android:text="Joining Year"
+                    android:textSize="13dp"
+                    android:textColor="#414042"
+                    />
+                <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:id="@+id/user_year_of_joining"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-- Select Joining Year --"/>
+                <customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+                    android:gravity="left"
+                    android:text="Leaving Year"
+                    android:textSize="13dp"
+                    android:textColor="#414042"
+                    />
+                <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:id="@+id/user_year_of_leaving"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-- Select Leaving Year --"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <customfonts.MyTextView
+                        android:id="@+id/cancel_add_professional"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cancel"
+                        android:textSize="18dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_toLeftOf="@+id/add_professional_details"
+                        android:layout_centerVertical="true"
+                        android:textColor="#4F86C9"/>
+                    <customfonts.MyRegulerText
+                        android:id="@+id/add_professional_details"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btnformate"
+                        android:textAlignment="center"
+                        android:padding="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+
+                        android:layout_marginTop="20dp"
+                        android:text="Add Profession"
+                        android:textSize="14dp"
+                        android:textColor="#fff"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="50dp"
+                android:background="#BDB8B8"
+              />
+            <customfonts.MyTextView
+                android:visibility="gone"
+                android:id="@+id/profession_added"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:layout_marginBottom="40dp"
+                android:text="Professional Details Successfully added"
+                android:textSize="14dp"
+                android:textAlignment="center"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#BDB8B8"
+                />
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <customfonts.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingTop="10dp"
+
+                    android:paddingLeft="11dp"
+
+                    android:gravity="center"
+                    android:text="Certification Details"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    />
+                <ImageView
+                    android:id="@+id/expand_certification_details"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_add_black_24dp"/>
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/certification_detail_area"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+                    android:gravity="left"
+                    android:text="Title"
+                    android:textSize="13dp"
+                    android:textColor="#414042"
+                    />
+                <customfonts.MyEditText
+                    android:id="@+id/user_certification_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="#000"
+                    android:background="#f0f0f4"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+                    android:drawablePadding="16dp"
+                    />
+                <customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+                    android:gravity="left"
+                    android:text="Organization"
+                    android:textSize="13dp"
+                    android:textColor="#414042"
+                    />
+
+                <customfonts.MyEditText
+                    android:id="@+id/user_certification_organization"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="#000"
+                    android:background="#f0f0f4"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+                    android:drawablePadding="16dp"
+                    />
+                <customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+                    android:gravity="left"
+                    android:text="Certification Description"
+                    android:textSize="13dp"
+                    android:textColor="#414042"
+                    />
+                <customfonts.MyEditText
+                    android:id="@+id/user_certification_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"
+                    android:textColor="#000"
+                    android:background="#f0f0f4"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+                    android:drawablePadding="16dp"
+                    />
+
+                <customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+                    android:gravity="left"
+                    android:text="Certification Year"
+                    android:textSize="13dp"
+                    android:textColor="#414042"
+                    />
+                <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:id="@+id/user_year_of_certification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-- Select Certification Year --"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <customfonts.MyTextView
+                        android:id="@+id/cancel_add_certification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cancel"
+                        android:textSize="18dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_toLeftOf="@+id/add_certification_details"
+                        android:layout_centerVertical="true"
+                        android:textColor="#4F86C9"/>
+                    <customfonts.MyRegulerText
+                        android:id="@+id/add_certification_details"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btnformate"
+                        android:textAlignment="center"
+                        android:padding="12dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+
+                        android:layout_marginTop="20dp"
+                        android:text="Add Certification"
+                        android:textSize="14dp"
+                        android:textColor="#fff"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="50dp"
+                android:background="#BDB8B8"
+                />
+            <customfonts.MyTextView
+                android:visibility="gone"
+                android:id="@+id/certification_added"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:layout_marginBottom="30dp"
+                android:text="Certification Details Successfully added"
+                android:textSize="14dp"
+                android:textAlignment="center"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="50dp"
+                android:background="#BDB8B8"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
+    <customfonts.MyRegulerText
+        android:id="@+id/save_and_continue_to_iii"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="0"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btnformate"
+        android:textAlignment="center"
+        android:padding="8dp"
+        android:text="Save &amp; Continue"
+        android:textSize="21dp"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        />
+    <LinearLayout
+        android:id="@+id/main_loader_education_experience_bg"
+        android:background="#A1000000"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/recent_loader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AVLoadingIndicatorView"
+            android:visibility="visible"
+            app:indicatorName="SquareSpinIndicator"
+            app:indicatorColor="@color/white"
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.HelloExperts.HelloExpert.Complains"
+
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+        <customfonts.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Report Complaint?"
+            android:textColor="#1269Ba"
+            android:textSize="25dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+
+            android:background="@color/btn_color"/>
+        <LinearLayout
+            android:id="@+id/after_submission_complaint"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <customfonts.MyRegulerText
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:padding="14dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Your complaint has been received to our support desk.
+Your complain"
+                android:textSize="16dp"
+                android:textColor="#414042"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/user_complaint_ticket_id"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ticket_icon"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="20dp"
+                    />
+
+            </RelativeLayout>
+
+            <customfonts.MyRegulerText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:padding="14dp"
+                android:gravity="center"
+                android:text="We don't want our customers to be waiting, a dedicated support agent will contact you shortly."
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#414042"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="#ffbc00"/>
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/send_complain_section"
+            android:layout_weight="30"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+                    android:gravity="left"
+                    android:text="Email"
+                    android:textSize="15dp"
+                    android:textColor="#414042"
+                    />
+
+                <customfonts.MyEditText
+                    android:id="@+id/email_for_complaint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="Enter Email"
+                    android:textColor="#000"
+                    android:background="#f0f0f4"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+                    />
+                <customfonts.MyTextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+                    android:gravity="left"
+                    android:text="Subject"
+                    android:textSize="15dp"
+                    android:textColor="#414042"
+                    />
+
+                <customfonts.MyEditText
+                    android:id="@+id/subject_for_complaint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="Subject"
+                    android:textColor="#000"
+                    android:background="#f0f0f4"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+
+                    />
+                <customfonts.MyTextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+                    android:gravity="left"
+                    android:text="Describe your complaint"
+                    android:textSize="15dp"
+                    android:textColor="#414042"
+                    />
+
+                <customfonts.MyEditText
+                    android:id="@+id/description_for_complaint"
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:gravity="top"
+                    android:inputType="text|textMultiLine"
+                    android:hint="Describe the complaint"
+                    android:textColor="#000"
+                    android:background="#f0f0f4"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+                    />
+                <customfonts.MyRegulerText
+                    android:id="@+id/attach_file_for_complaint"
+                    android:layout_width="130dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btnformate"
+                    android:textAlignment="center"
+                    android:padding="8dp"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="20dp"
+                    android:text="Attach Files"
+                    android:textSize="14dp"
+                    android:textColor="#fff"
+                    />
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <customfonts.MyRegulerText
+            android:id="@+id/submit_complaint"
+            android:layout_width="match_parent"
+            android:layout_weight="0"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btnformate"
+            android:textAlignment="center"
+            android:padding="8dp"
+            android:text="SUBMIT COMPLAINT"
+            android:textSize="18dp"
+            android:textColor="#fff"
+
+            android:layout_marginBottom="10dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_loader_complaints_bg"
+        android:background="#A1000000"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/recent_loader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AVLoadingIndicatorView"
+            android:visibility="visible"
+            app:indicatorName="SquareSpinIndicator"
+            app:indicatorColor="@color/white"
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>

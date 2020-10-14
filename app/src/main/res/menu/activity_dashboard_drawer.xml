@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:checked="true"
+            android:id="@+id/nav_Recent_activity"
+            android:icon="@drawable/recent_icon"
+            android:title="@string/menu_recent_activity" />
+        <item
+            android:id="@+id/nav_new_questions"
+            android:icon="@drawable/new_icon"
+            android:title="@string/menu_new_questions" />
+        <item
+            android:id="@+id/nav_all_questions"
+            android:icon="@drawable/questions_icon"
+            android:title="@string/menu_all_questions" />
+        <item
+            android:id="@+id/nav_all_answers"
+            android:icon="@drawable/answers_icon"
+            android:title="@string/menu_all_answers" />
+        <item
+            android:id="@+id/nav_locked_question"
+            android:icon="@drawable/locked_question"
+            android:visible="false"
+            android:title="@string/menu_locked_question" />
+    </group>
+    <item android:title="Withdraw Payment">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+
+                    android:id="@+id/nav_add_withdraw_payment_source"
+                    android:icon="@drawable/payment"
+                    android:title="Withdraw Source" />
+<!--            <item-->
+<!--                android:id="@+id/nav_my_withdraw_payment_source"-->
+<!--                android:icon="@drawable/my_payment_source"-->
+<!--                android:title="@string/menu_my_withdraw_payment_source" />-->
+<!--            <item-->
+<!--                android:id="@+id/nav_withdraw_pending_earning"-->
+<!--                android:icon="@drawable/pending_payment"-->
+<!--                android:title="@string/menu_withdraw_pending_earning" />-->
+<!--            <item-->
+<!--                android:id="@+id/nav_my_withdraw_history"-->
+<!--                android:icon="@drawable/atm"-->
+<!--                android:title="@string/menu_my_withdraw_history" />-->
+                </group>
+
+        </menu>
+    </item>
+    <item android:title="Help">
+
+        <menu>
+           <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_expert_faq"
+                    android:icon="@drawable/expert_faq"
+                    android:title="@string/menu_expert_faq" />
+                <item
+                    android:id="@+id/nav_complains"
+                    android:icon="@drawable/ic_comment_black_24dp"
+                    android:title="@string/menu_complaints" />
+                <item
+                    android:id="@+id/nav_alerts_setting"
+                    android:icon="@drawable/alert_notification_icon"
+                    android:title="Notification Settings" />
+           </group>
+
+        </menu>
+    </item>
+
+    <item android:title="Terms &amp; Conditions">
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_expert_answering_guideline"
+                    android:icon="@drawable/instructions"
+                    android:title="@string/menu_expert_answering_guideline" />
+                <item
+                    android:id="@+id/nav_suspension_policy"
+                    android:icon="@drawable/privacy_icon"
+                    android:title="@string/menu_expert_suspension_policies" />
+
+                <item
+                    android:id="@+id/nav_sign_out"
+                    android:icon="@drawable/logout"
+                    android:title="@string/menu_sign_out" />
+            </group>
+        </menu>
+    </item>
+
+</menu>
